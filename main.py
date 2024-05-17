@@ -3,7 +3,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 from perlin_noise import PerlinNoise
 import sys
 from random import *
-
+from os import *
 
 word_big = 50
 game_time = 0
@@ -123,7 +123,8 @@ class Block(Button):
             #退出游戏
             if held_keys["Esc"]:
                 sys.exit()
-
+            if held_keys['F1']:
+                sys.exit()
 
 
 
